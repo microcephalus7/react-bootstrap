@@ -1,26 +1,86 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <div>
+        <button type="button" class="btn">
+          Basic
+        </button>
+        <button type="button" class="btn btn-primary">
+          Primary
+        </button>
+        <button type="button" class="btn btn-secondary">
+          Secondary
+        </button>
+        <button type="button" class="btn btn-success">
+          Success
+        </button>
+        <button type="button" class="btn btn-info">
+          Info
+        </button>
+        <button type="button" class="btn btn-warning">
+          Warning
+        </button>
+        <button type="button" class="btn btn-danger">
+          Danger
+        </button>
+        <button type="button" class="btn btn-dark">
+          Dark
+        </button>
+        <button type="button" class="btn btn-light">
+          Light
+        </button>
+        <button type="button" class="btn btn-link">
+          Link
+        </button>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="" alt="Third slide" />
+          </div>
+        </div>
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
         >
-          Learn React
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-      </header>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
